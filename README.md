@@ -1,4 +1,6 @@
 # RequirePatternXt
+[![Build Status](https://travis-ci.org/mindreframer/require_pattern_xt.svg?branch=master)](http://travis-ci.org/mindreframer/require_pattern_xt)
+
 __ a fork from https://github.com/Wardrop/RequirePattern with some impovements __
 
 This library provides a simple extension to the Kernel module that allows files to be conveniantly `require`'d based on a glob pattern.
