@@ -44,7 +44,7 @@ Any files that refuse to load will be reported to STDERR with backtrace informat
 
 # Tests
 
-    $ mtest test
+    $ sh/test
 
 ## Contributing
 
