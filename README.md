@@ -1,4 +1,5 @@
 # RequirePatternXt
+__ a fork from https://github.com/Wardrop/RequirePattern with some impovements __
 
 This library provides a simple extension to the Kernel module that allows files to be conveniantly `require`'d based on a glob pattern.
 
