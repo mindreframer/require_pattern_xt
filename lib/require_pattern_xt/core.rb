@@ -28,9 +28,9 @@ module RequirePatternXt
     end
     def self.log_error(require_map)
       STDERR.puts Coloring.red("\nSome files failed:")
-      require_map.each { |file, e| STDERR.puts
-          Coloring.red("    #{file}: ") +
-          Coloring.yellow("#{e.backtrace[0]} #{e}")
+      require_map.each { |file, e|
+        msg = Coloring.red("    #{file}: ") + Coloring.yellow("#{e.backtrace[0]} #{e}")
+        STDERR.puts msg
       }
       STDERR.puts
       raise LoadError, "One or more files failed to load. See STDERR output for details."

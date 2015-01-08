@@ -44,9 +44,20 @@ require_pattern 'lib/**/*.rb', 'models/**/*.rb'
 
 Any files that refuse to load will be reported to STDERR with backtrace information.
 
-# Tests
+## Tests
 
     $ sh/test
+
+
+## Interactive testing
+
+    $ sh/c
+    $ require_pattern 'test/dummy/**/**.rb'
+    irb(main):001:0> require_pattern 'test/dummy/**/**.rb'
+
+    Some files failed:
+        test/dummy/bad.rb:
+    /Users/roman/Desktop/sand/require_pattern_xt/test/dummy/bad.rb:1:in `<top (required)>' uninitialized constant EvenWorse
 
 ## Contributing
 
@@ -55,4 +66,3 @@ Any files that refuse to load will be reported to STDERR with backtrace informat
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
