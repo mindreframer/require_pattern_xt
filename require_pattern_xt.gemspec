@@ -6,11 +6,11 @@ require 'require_pattern_xt/version'
 Gem::Specification.new do |spec|
   spec.name          = "require_pattern_xt"
   spec.version       = RequirePatternXt::VERSION
-  spec.authors       = ["Roman Heinrich"]
+  spec.authors       = ["Roman Heinrich", "Tom Wardrop"]
   spec.email         = ["roman.heinrich@gmail.com"]
-  spec.summary       = %q{Write a short summary. Required.}
+  spec.summary       = %q{Requires files based on a pattern in a robust and optimistic manner.}
   spec.description   = %q{Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mindreframer/require_pattern_xt"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
